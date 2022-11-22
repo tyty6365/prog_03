@@ -1,8 +1,5 @@
 package graphdemo;
 
-
-
-
 /**
  * A test bed for a weighted digraph abstract data type implementation
  * and implementations of elementary classical graph algorithms that use the
@@ -75,8 +72,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
                         if (g.size() > 0) {
                             int[] components = new int[(int) g.size()];
                             int numComp = getComponents(g, components);
-
-                            System.out.println("case: " + Arrays.toString(components));
 
                             for (int k = 1; k <= numComp; k++) {
                                 System.out.println("*** Component # " + k + " ***");
